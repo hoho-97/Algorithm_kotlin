@@ -1,5 +1,7 @@
 fun main() {
-    var f = arrayListOf(1,2,3,4)
-    print(++f[f.lastIndex])
-
+    val token = """
+        </LinearLayout>
+    """.trimIndent()
+    val result = "([a-zA-z_]+)".toRegex().find(token)!!.value
+    println(result)
 }
