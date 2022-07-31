@@ -1,7 +1,7 @@
 fun main() {
-    val token = """
-        </LinearLayout>
-    """.trimIndent()
-    val result = "([a-zA-z_]+)".toRegex().find(token)!!.value
-    println(result)
+    val hash = HashMap<Int, Int>()
+    hash[1] = 1
+    hash[2] = 2
+
+    print(hash.filter { (k, v) -> k > 1 })
 }
